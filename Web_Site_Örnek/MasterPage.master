@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ 
+
+<link href="performanss.css" rel="stylesheet">
+	<script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <style type="text/css">
+        .style1
+        {
+            width: 184px;
+        }
+        .style2
+        {
+            height: 37px;
+        }
+        .style3
+        {
+            width: 184px;
+            height: 37px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+<div id="container">
+
+<div id="logom">
+<img src="resimler/logom.png">
+</div>
+<div id="logom2">
+&nbsp;<asp:LinkButton ID="LinkButton1" runat="server" 
+        ForeColor="Black" style="font-weight: 700">Oturum Açılmadı</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;
+    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" 
+        ForeColor="Black" style="font-weight: 700">Çıkış</asp:LinkButton>
+</div>
+
+<div id="banner">
+<img src="resimler/banner2.jpg">
+
+</div>
+
+
+<div id="menu">
+    <ul>
+        <asp:Repeater ID="Repmenu" runat="server">  
+            <ItemTemplate>
+
+                <img src='<%#Eval("menufoto") %>' id="menufotografı"><li><a href='<%#Eval("menuyol")%>'> <%# Eval("menuad")%> </li></a>
+
+             </ItemTemplate>
+        </asp:Repeater>
+    </ul>
+</div>
+
+
+
+<div id="slider">
+<div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1200px;margin:0px auto 0px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="Slider Fotograflar/slider4.jpg" alt="Cheetah"  title="Cheetah" data-description="Cheetahs are the fastest animals in the world for land animals." data-duration="7000" />
+                </li>
+                <li><img src="Slider Fotograflar/sliderpanda.jpg" alt="Panda"  title="Pandas" data-description="The pandas meet 99 percent of their daily nutritional needs." data-duration="7000" />
+                </li>
+                <li><img src="Slider Fotograflar/slideraslan.jpg" alt="Aslan"  title="Lion" data-description="The weight of the male lion is between 190-280 kg depending on the environment he lives in. The female lion is lighter than the male and its weight is between 110-150 kg." data-duration="7000" />
+                </li>
+                <li><img src="Slider Fotograflar/sliderkaplannn.jpg" alt="Kaplan"  title="Tiger" data-description="The lines of each tiger are peculiar to him, just like the fingerprints of people." />
+                </li>
+                <li><img src="Slider Fotograflar/sliderkurt.jpg" alt="Kurt"  title="Wolf" data-description="The wolves have approximately 200 million olfactory cells. People are five million. In other words, a wolf can take the smell of another animal at a distance of more than 1.5 kilometers." />
+                </li>
+                <li><img src="Slider Fotograflar/sliderkartall.jpg" alt="sliderkartall"  title="Eagles" data-description="Flying high among the birds in the sky eagle
+Although they fly at a very high altitude, they see their eyes very well." />
+                </li>
+                <li><img src="Slider Fotograflar/slideryunusbal%C4%B1g%C4%B1.jpg" alt="Yunus Balığı"  title="Dolphin" data-description="Dolphins like bats
+use their voices to find directions and hunt. They benefit from the echo which is the result of the reflection of high-frequency sound to objects or other creatures." />
+                </li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive JavaScript Slideshow">Responsive JavaScript Slideshow</a></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="hayvanlar">
+
+<h1>Kategoriler</h1>
+<ul>
+    <asp:Repeater ID="Repyanmenu" runat="server">
+    <ItemTemplate>
+<li><a href="#"><%#Eval("Turu") %></a>
+	<ul>
+	<img src='<%#Eval("foto") %>' id="hayvanlarfoto"><li><a href="yarasa.html"><%#Eval("adi") %></a>
+	
+    <li><a href="#"><%#Eval("hayvan1") %></a>
+	<li><a href="#"><%#Eval("hayvan2") %></a>
+	<li><a href="#"><%#Eval("hayvan3") %></a></li>
+	</ul>
+
+	
+	
+    </ItemTemplate>
+</asp:Repeater>
+</ul>
+<div class="giris">
+<h1>Giriş Yap</h1>
+<table>
+<tr>
+<td>E-Posta</td>
+<td class="style1">
+    <asp:TextBox ID="textposta" runat="server"></asp:TextBox>
+    </td>
+</tr>
+
+<tr>
+
+<td>Şifre</td>
+<td class="style1">
+    <asp:TextBox ID="textsifre" runat="server"></asp:TextBox>
+    </td>
+</tr>
+<tr>
+<td class="style2" >&nbsp;<asp:Label ID="Lblkontrol" runat="server"></asp:Label>
+<td class="style3" >&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="text-align: center" Text="Giriş" />
+    <asp:Button ID="Button2" runat="server" Text="Temizle" />
+
+</tr>
+
+</table>
+</div>
+</div>
+
+</div>
+
+<div id="yanbilgi">
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</div>
+
+<div id="altbilgi">
+
+<ul>
+<asp:Repeater ID="Repmenu2" runat="server">  
+        <ItemTemplate>
+
+<img src='<%#Eval("menufotoo") %>' id="menufotografı"><li><a href='<%#Eval("menuyoll")%>'> <%# Eval("menuadd")%> </li></a>
+
+            </ItemTemplate>
+        </asp:Repeater>
+
+</ul>
+</div>
+
+
+</div>
+
+
+
+    </form>
+
+
+
+</body>
+</html>

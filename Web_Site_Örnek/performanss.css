@@ -1,0 +1,408 @@
+body
+{
+	background-image:url("resimler/arkaplan.jpg")
+}
+#container
+{
+	
+	width:%100px;
+	height:%100px;
+
+	
+	
+}
+#menu
+{
+	
+	padding-left:50px;
+	text-align:center;
+	font-size:30px;
+}
+#menu ul 
+{
+	
+}
+#menu ul li 
+{
+	padding-left:10px;
+	padding-right:100px;
+	display: inline;
+	list-style-type:none;
+}
+#menu ul li a
+{
+	font-weight:bold;
+	font-family:verdana;
+	opacity:0.7;
+	color:white;
+	text-decoration:none;
+}
+#menu ul li a:hover
+{
+	opacity:1;
+	color:black;
+	font-family:verdana;
+	text-decoration:underline;
+}
+#menufotografı
+{
+	width:30px;
+	height:30px;
+}
+
+#banner 
+{
+	
+	margin-left:300px;
+	margin-left:200px;
+	margin-right:auto;
+	width:1000px;
+	height:190px;
+	
+}
+#logom2 img
+{
+	
+	padding-top:25px;
+	width:150px;
+	height:140px;
+	float:right;
+
+}
+#logom2
+{
+    float:right;
+}
+#logom img
+{
+	
+	margin-left:10px;
+	padding-top:25px;
+	padding-right:auto;
+	padding-left:auto;
+	width:150px;
+	height:140px;
+	float:left;
+
+}
+#hayvanlar
+{
+	
+	clear:both;
+	margin-top:20px;
+	
+	float:left;
+	text-align:left;
+	font-size:20px;
+    width: 334px;
+}
+
+
+#hayvanlar ul li 
+{
+
+	list-style: none;	
+	
+}
+#hayvanlar ul 
+{
+	  margin: 0;
+    padding: 0;
+}
+#hayvanlar ul li a
+{
+	text-decoration: none;
+    color: red;
+	font-weight:bold;
+    padding: 10px;
+    display: block;
+    border-bottom:1px solid #282828;
+}
+
+#hayvanlar ul li ul 
+{
+	display:none;
+
+	
+}
+#hayvanlar ul li:hover ul 
+{
+	display:block;
+	position:absolute;
+    margin:-40px 0 0 160px;
+}
+#hayvanlar ul li ul li a
+{
+	padding:10px;
+	font-size:15px;
+	background-color: #282828;
+	border-bottom:1px solid #222;
+	transition:all .3s ease-in-out;
+	width:170px;
+}
+#hayvanlar ul li a:hover 
+{
+	background-color: #ff8937;
+	transition:all .3s ease-in-out;
+}
+#hayvanlar ul li ul li a
+{
+	color:white;
+}
+#hayvanlarfoto
+{
+	width:40px;
+	height:40px;
+}
+#yanbilgi
+{
+	
+	width:970px;
+	height:625px;
+	margin-top:20px;
+	font-size:15px;
+	float:right;
+}
+#yanbilgi ul li a:hover
+{
+	
+	color:#ff1e00;
+}
+#kırmızıyazı
+{
+	font-size:17px;
+	font-family:Kartika;
+	font-weight: bold;
+	color:#ff6a6a;
+}
+#iletisim
+{
+	
+	padding-top:15px;
+	padding-left:50px;
+	width:970px;
+	height:625px;
+	margin-top:20px;
+	font-size:15px;
+	float:right;
+
+}
+table
+{
+	text-align:verdana;
+	font-weight:bold;
+	border-radius:10px;
+    width: 303px;
+}
+.iletisimkutu
+{
+	text-align:verdana;
+	font-weight:bold;
+	margin-top:20px;
+	margin-left:10px;
+	padding-left:5px;
+	border-radius:5px;
+	background-color:#DCDCDC;
+	width:190px;
+	height:25px;
+	
+}
+
+#button
+{
+	padding:5px;
+	margin:5px;
+	color:#FFFF;
+	background-color:#696969;
+}
+.iletisimfoto
+{
+	width:25px;
+	height:25px;
+}
+.adfoto
+{
+margin-top:15px;
+
+width:25px;
+height:25px;	
+}
+.iletisimkutu
+{
+	width:50px;
+	height:50px;
+}
+#galeri
+{
+	margin-top:50px;
+	margin-left:30px;
+	float:left;
+	
+	width:890px;
+	
+}
+/*#aslan:hover
+{
+	
+	width:150px;
+	height:190px;
+	background-image:url("resimler/arkaaslan.png");
+	-webkit-background-size: 100% 100%;
+	transition-duration:1s;
+}
+#kaplan:hover
+{
+
+width:150px;
+	height:190px;
+	background-image:url("resimler/kaplanarka.png");
+	-webkit-background-size: 100% 100% ;
+	transition-duration:1s;
+	
+}
+#kaplumbaga:hover
+{
+background-image:url("resimler/kaplumbagaarka.png");
+-webkit-background-size: 100% 100%;
+ transition-duration: 1s;
+}
+#penguen:hover
+{
+
+background-image:url("resimler/arkapenguen.png");
+-webkit-background-size: 100% 100%;
+background-repeat:no-repeat;
+ transition-duration: 1s;
+}
+#karınca:hover
+{
+
+background-image:url("resimler/karıncas.png");
+-webkit-background-size: 100% 100%;
+background-repeat:no-repeat;
+ transition-duration: 1s;
+
+
+}
+
+#panda:hover
+{
+	width:150px;
+	height:190px;
+	background-image:url("resimler/arkapanda.png");
+	-webkit-background-size: 100% 100% ;
+	transition-duration:1s;
+
+
+}
+#kurt:hover
+{
+	width:150px;
+	height:190px;
+	background-image:url("resimler/arkakurt.png");
+	-webkit-background-size: 100% 100% ;
+	transition-duration:1s;
+}
+#yunus:hover
+{
+	width:150px;
+	height:190px;
+	background-image:url("resimler/arkayunus.png");
+	-webkit-background-size: 100% 100% ;
+	transition-duration:1s;
+}
+#zurafa:hover
+{
+	width:150px;
+	height:190px;
+	background-image:url("resimler/zurafaarka.png");
+	-webkit-background-size: 100% 100% ;
+	transition-duration:0.9s;
+}
+#geyik:hover
+{
+	width:150px;
+	height:190px;
+	background-image:url("resimler/geyikarka.png");
+	-webkit-background-size: 100% 100% ;
+	transition-duration:0.9s;
+}*/
+#aslan {
+    float: left;
+   
+    margin-left: 30px;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 190px;
+    -webkit-background-size: 100% 100%;
+}
+
+#yarasabilgi
+{
+	
+	width:970px;
+	height:625px;
+	margin-top:20px;
+	font-size:15px;
+	float:right;
+}
+#yarasabilgi ul li a:hover
+{
+	
+	color:#ff1e00;
+}
+#yarasabilgi img
+{
+	margin-left:250px;
+	
+	height:200px;
+	width:300px;
+}
+
+#altbilgi
+{
+	
+	clear:both;
+	padding-left:50px;
+	text-align:center;
+	font-size:30px;
+}
+
+#altbilgi ul 
+{
+	
+}
+#altbilgi ul li 
+{
+	padding-left:10px;
+	padding-right:100px;
+	display: inline;
+	list-style-type:none;
+}
+#altbilgi ul li a
+{
+	font-weight:bold;
+	font-family:verdana;
+	opacity:0.7;
+	color:white;
+	text-decoration:none;
+}
+#altbilgi ul li a:hover
+{
+	opacity:1;
+	color:black;
+	font-family:verdana;
+	text-decoration:underline;
+}
+#menufotografı
+{
+	width:30px;
+	height:30px;
+}
+.paneltablo
+{
+   
+margin-right: auto;  
+margin-left:150px;
+}
